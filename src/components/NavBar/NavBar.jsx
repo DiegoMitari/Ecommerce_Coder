@@ -1,9 +1,12 @@
 import React from 'react'
+import NavCart from '../NavCart/NavCart';
+
 
 export const NavBar = () => {
     let imgURL ="https://leonidasesteban.com/icons/icon-50x50.png";
     return (
-        <nav>
+        <header>
+        <nav className="container">
             <div className="left">
                     <a className="nav-a" href="#">PokeStore</a>
                     <img  src={imgURL} alt="pokeStore-logo" className="navbar-image"/>
@@ -13,14 +16,9 @@ export const NavBar = () => {
                 <a className="nav-a" href="#">Products</a>
                 <a className="nav-a" href="#">30% OFF</a>
             </div>
-            <ul className="right">
-                <li><a href="">
-                    <span className="userBuy"><i class="fas fa-user"></i></span>
-                    <span className="shoppingCar"><i class="fas fa-shopping-cart"></i>
-                    <span className="carCount">0</span></span>
-                    </a></li>
-            </ul>
+            <NavCart />
         </nav>
+        </header>
     );
 }
 

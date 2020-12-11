@@ -26,6 +26,11 @@ nav {
   top: 0;
 }
 
+.container {
+  display: flex;
+  position: relative;
+}
+
 .left {
   width: 30%;
   text-align: left;
